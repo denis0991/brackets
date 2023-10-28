@@ -1,6 +1,6 @@
 module.exports = function check(str, config) {
   const stack = [];
-  let countStraight = 0;
+  
   const bracketsPair = {
     [')']: '(',
     [']']: '[',
@@ -24,7 +24,6 @@ module.exports = function check(str, config) {
         stack.pop()
       } else {
         stack.push(bracket);
-        console.log(stack)
       }
       
       
@@ -51,3 +50,4 @@ module.exports = function check(str, config) {
 
 
 
+  
